@@ -18,9 +18,8 @@ clean-targets:
   - "dbt_modules"
   - "dbt_packages"
 
-
 models:
   jaffle_shop:
-
-#     example:
-#       +materialized: view
+    +materialized: table
+    example:
+      +materialized: view
