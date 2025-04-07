@@ -1,0 +1,18 @@
+{
+  "name": "dbt Dev Container",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "workspaceMount": "",
+  "runArgs": [
+    "--userns=keep-id:uid=1000,gid=1000",
+    "--volume=/home/trevorbenson/Projects/dbt-tutorial:/workspaces/dbt-tutorial:Z"
+  ],
+  "containerUser": "vscode",
+  "updateRemoteUserUID": true,
+  "features": {
+    "ghcr.io/devcontainers/features/python:1": {
+      "version": "3.13"
+    }
+  }
+}
