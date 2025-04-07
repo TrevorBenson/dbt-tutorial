@@ -1,3 +1,5 @@
 dbt-user-creds.json
 logs/*
-
+**/logs/dbt.log
+**/target/*
+.user.yml
